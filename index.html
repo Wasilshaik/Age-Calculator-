@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity=
+"sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"></script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+        integrity=
+"sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="base">
+                <div class="enter"><h4>Age Calculator</h4></div>
+                <div class="block">
+                    <p class="title">Date</p>
+                    <input
+                        type="text"
+                        name="date"
+                        id="date"
+                        placeholder="dd"
+                        required="required"
+                        minlength="1"
+                        maxlength="2"
+                    />
+                </div>
+                <div class="block">
+                    <p class="title">Month</p>
+                    <input
+                        type="text"
+                        name="month"
+                        id="month"
+                        placeholder="mm"
+                        required="required"
+                        minlength="1"
+                        maxlength="2"
+                    />
+                </div>
+                <div class="block">
+                    <p class="title">Year</p>
+                    <input
+                        type="text"
+                        name="year"
+                        id="year"
+                        placeholder="yyyy"
+                        required="required"
+                        minlength="4"
+                        maxlength="4"
+                    />
+                </div>
+            </div>
+            <div class="base">
+                <div class="enter">
+                    <input
+                        type="button"
+                        name="submit"
+                        value="Submit"
+                        onclick="age()"
+                    />
+                </div>
+            </div>
+            <div id="age"></div>
+        </form>
+    </div>
+</body>
